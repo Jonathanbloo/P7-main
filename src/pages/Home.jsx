@@ -8,24 +8,26 @@ import logoFooter from '../assets/logonoirkasa.png'
 
 function Home() {
   return (
-    <section className="body__section">
-      <section className="header__section">
-        <Header logo={Logo} />
-      </section>
-      <section className="banner__section">
-        <Banner
-          imageHome={bannerHome}
-          titleHome="Chez vous, partout et ailleurs"
-        />
-      </section>
-      <section className="card__section">
-        <Card />
+    <>
+      <section className="body__section">
+        <section className="header__section">
+          <Header logo={Logo} />
+        </section>
+        <section className="banner__section">
+          <Banner
+            imageHome={bannerHome}
+            titleHome="Chez vous, partout et ailleurs"
+          />
+        </section>
+        <section className="card__section">
+          <Card />
+        </section>
       </section>
       <Footer
         logofooter={logoFooter}
         textfooter="© 2020 Kasa. All rights reserved"
       />
-    </section>
+    </>
   )
 }
 
