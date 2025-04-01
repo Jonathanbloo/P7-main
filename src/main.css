@@ -23,6 +23,10 @@ body {
   max-width: 1440px;
   width: 100%;
   overflow: hidden;
+  margin-top: 40px;
+}
+.footer {
+  margin-top: 60px;
 }
 
 @media (max-width: 390px) {
@@ -31,5 +35,9 @@ body {
   }
   .header__section {
     max-width: 390px;
+    margin-bottom: 22px;
+  }
+  .banner__section {
+    margin-bottom: 22px;
   }
 }
