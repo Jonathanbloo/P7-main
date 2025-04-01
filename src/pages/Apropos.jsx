@@ -9,27 +9,29 @@ import '../styles/apropos.css'
 
 function Apropos() {
   return (
-    <div>
-      <Header logo={Logo} />
-      <div className="bannerapropos">
-        <div className="overlay"></div>
-        <img
-          className="banneraproposimg"
-          src={bannerApropos}
-          alt="Banner à propos"
-        />
-      </div>
-      <div className="collapse">
-        {AproposData.map((item, i) => (
-          <Collapse key={i} title={item.title} text={item.text} />
-        ))}
-      </div>
+    <>
+      <section className="body__section">
+        <Header logo={Logo} />
+        <div className="bannerapropos">
+          <div className="overlay"></div>
+          <img
+            className="banneraproposimg"
+            src={bannerApropos}
+            alt="Banner à propos"
+          />
+        </div>
+        <div className="collapse">
+          {AproposData.map((item, i) => (
+            <Collapse key={i} title={item.title} text={item.text} />
+          ))}
+        </div>
+      </section>
 
       <Footer
         logofooter={logoFooter}
         textfooter="© 2020 Kasa. All rights reserved"
       />
-    </div>
+    </>
   )
 }
 
