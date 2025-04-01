@@ -15,7 +15,7 @@
   background-color: #f6f6f6;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 60px;
+  gap: 53px;
   padding: 60px 68px;
   border-radius: 25px;
 }
@@ -38,20 +38,17 @@
   position: absolute;
   font-size: 18px;
   font-weight: 600;
-  bottom: 0px;
-  height: 58px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.285);
+  bottom: 20px;
+  left: 20px;
   color: white;
-  padding: 10px 15px;
   border-radius: 5px;
   width: 100%;
-  max-width: calc(100% - 0px);
+  max-width: calc(100% - 40px);
   text-align: left;
   word-wrap: break-word;
   box-sizing: border-box;
   justify-content: flex-start;
+  text-shadow: 1px 1px 10px black;
 }
 
 @media (max-width: 390px) {

@@ -18,3 +18,9 @@
   color: white;
   font-size: 25px;
 }
+
+@media (max-width: 390px) {
+  .footer {
+    align-items: center;
+  }
+}

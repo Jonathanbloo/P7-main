@@ -8,15 +8,28 @@
   margin-top: 20px;
 }
 .header__nav {
-  gap: 15px;
+  gap: 57px;
+  display: flex;
 }
 .nav__link {
   color: black;
   text-decoration: none;
   font-size: 24px;
-  margin-right: 35px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .active-link {
   border-bottom: 1.5px solid #000;
+}
+
+@media (max-width: 390px) {
+  .header img {
+    width: 145px;
+  }
+  .header__nav {
+    gap: 26px;
+  }
+  .nav__link {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }

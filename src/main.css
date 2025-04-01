@@ -29,4 +29,7 @@ body {
   .root {
     max-width: 390px;
   }
+  .header__section {
+    max-width: 390px;
+  }
 }
