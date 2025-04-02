@@ -1,19 +1,20 @@
 .collapse {
-  width: 950px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
   box-sizing: border-box;
-  margin-top: 35px;
-  margin-bottom: 15px;
+  gap: 30px;
+}
+.collapse--apropos .collapse-button {
+  width: 79%;
 }
 
 .collapse-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 50px;
   background-color: #ff6060;
   color: white;
@@ -23,6 +24,7 @@
   border-radius: 5px;
   box-sizing: border-box;
   padding-left: 20px;
+  margin: 0 auto;
 }
 
 .arrow {
@@ -43,10 +45,13 @@
     0deg
   ); /* Pas de rotation pour la flèche pointant vers le bas */
 }
+.hide {
+  display: none;
+}
 
 .collapse-content {
   background-color: #f2f2f2;
-  width: 100%;
+  width: 79%;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 0 0 5px 5px;
@@ -78,4 +83,24 @@
 .collapse-button {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
+}
+
+@media (max-width: 390px) {
+  .collapse {
+    gap: 20px;
+  }
+  .collapse--apropos .collapse-button {
+    width: 100%;
+  }
+  .collapse-button {
+    border-radius: 5px;
+    height: 30px;
+    font-size: 13px;
+  }
+  .arrow {
+    font-size: 20px;
+  }
+  .collapse-content {
+    width: 100%;
+  }
 }
