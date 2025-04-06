@@ -1,48 +1,29 @@
-.carousel {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-.carousel__image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 25px;
-  margin-bottom: 5px;
-}
-.carousel__button__left {
-  position: absolute;
-  left: 6px;
-  top: 150px;
-  background-color: transparent;
-  border: none;
-}
-.carousel__button__right {
-  position: absolute;
-  right: 6px;
-  top: 150px;
-  background-color: transparent;
-  border: none;
-}
 .logement__details {
-  max-width: 1156px;
+  max-width: 100%;
   margin: 0 auto;
+}
+.logement__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  margin-bottom: 15px;
 }
 .logement__title {
   font-size: 36px;
   font-weight: 400;
   color: #ff6060;
-  margin-bottom: 6px;
+  margin: 0px 0px 7px 0px;
 }
 .logement__location {
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 6px;
   margin-top: 0px;
 }
 .logement__informations {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 15px;
 }
 .logement__profil {
   display: flex;
@@ -62,12 +43,12 @@
   font-weight: 400;
   margin-right: 10px;
 }
-.logement__tags__rating {
+.logement__profil__rating {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  flex-direction: column;
+  gap: 28px;
 }
 .logement__tags {
   display: flex;
@@ -120,6 +101,38 @@
 }
 
 @media (max-width: 390px) {
+  .logement__description {
+    flex-direction: column;
+    align-items: normal;
+    margin-bottom: 0px;
+  }
+  .logement__profil__rating {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .logement__profil__photo {
+    width: 38px;
+  }
+  .logement__profil__name {
+    font-size: 14px;
+  }
+  .logement__title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .logement__location {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+  }
+  .logement__collapses {
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+  }
+  .collapse__title {
+    font-size: 13px;
+  }
   .footer {
     margin-top: 0px;
   }
