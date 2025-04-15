@@ -4,7 +4,7 @@ import Collapse from '../components/Collapses.jsx'
 import Footer from '../components/Footer.jsx'
 import Logo from '../assets/LOGO.png'
 import logoFooter from '../assets/logonoirkasa.png'
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import data from '../JSON/data.json'
 import Tag from '../components/Tag.jsx'
 import Rating from '../components/Rating'
@@ -12,9 +12,9 @@ import '../main.css'
 import '../styles/logement.css'
 
 function Logements() {
-  const { id } = useParams() // `id` sera une chaîne extraite de l'URL
+  const { id } = useParams()
 
-  // Recherche du logement dans le fichier JSON par son `id` (qui est une chaîne)
+  // Recherche du logement dans le fichier JSON
   const logement = data.find((logement) => logement.id === id)
 
   const tags = logement?.tags.map((tag, index) => {
@@ -23,7 +23,8 @@ function Logements() {
 
   // Si aucun logement n'est trouvé, on affiche un message d'erreur
   if (!logement) {
-    return <div>Logement non trouvé</div>
+    // 🔁 Redirection si l'ID est invalide
+    return <Navigate to="/error" replace />
   }
 
   return (
@@ -82,7 +83,6 @@ function Logements() {
               }
             />
           </div>
-          {/* Ajoute d'autres informations du logement ici */}
         </div>
       </section>
       <Footer
