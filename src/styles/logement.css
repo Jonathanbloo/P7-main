@@ -90,12 +90,13 @@
   font-size: 17px;
   font-weight: 300;
 }
-.collapse-content.show {
+.logement__collapses .collapse-content.show {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
   flex-grow: 1;
+  width: 100%;
 }
 .collapse__logement__content {
   margin-bottom: -80px;
