@@ -10,6 +10,7 @@
 .header__nav {
   gap: 57px;
   display: flex;
+  flex-wrap: wrap;
 }
 .nav__link {
   color: black;
