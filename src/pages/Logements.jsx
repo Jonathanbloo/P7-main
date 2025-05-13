@@ -24,7 +24,7 @@ function Logements() {
   // Si aucun logement n'est trouvé, on affiche un message d'erreur
   if (!logement) {
     // 🔁 Redirection si l'ID est invalide
-    return <Navigate to="/error" replace />
+    return <Navigate to="/Error" replace />
   }
 
   return (

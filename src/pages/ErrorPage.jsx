@@ -1,11 +1,11 @@
-import Header from '../components/Header'
+import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import image_404 from '../assets/image_404.png'
 import Logo from '../assets/logo-kasa.png'
-import Error404 from '../components/Error404.jsx'
+import Error404 from '../components/Error.jsx'
 import logoFooter from '../assets/logonoirkasa.png'
 
-function Error() {
+function ErrorPage() {
   return (
     <>
       <section className="body__section">
@@ -31,4 +31,4 @@ function Error() {
   )
 }
 
-export default Error
+export default ErrorPage

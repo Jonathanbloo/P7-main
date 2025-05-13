@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import Apropos from './pages/Apropos'
+import About from './pages/About'
 import Logements from './pages/Logements'
-import Error from './pages/Error.jsx'
+import ErrorPage from './pages/ErrorPage'
 import '../src/main.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -12,9 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="apropos" element={<Apropos />} />
+        <Route path="apropos" element={<About />} />
         <Route path="/Logements/:id" element={<Logements />} />
-        <Route path="*" element={<Error />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
   </React.StrictMode>,

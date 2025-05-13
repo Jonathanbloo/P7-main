@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import '../styles/404.css'
+import '../styles/error.css'
 
 function Error404({ image404, text404, backhome }) {
   const navigate = useNavigate()
